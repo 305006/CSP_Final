@@ -4,8 +4,23 @@ Thuy Phung
 
 //https://codereview.stackexchange.com/questions/31282/super-simple-spam-program
 
+Original Code
+
 def main():
     number_of_times = int(input("Choose the number of times you want to spam. "))
     message = input("What message do you want to spam? ")
     for _ in range(number_of_times):
         print(message)
+
+Commented Code
+
+def main(): #defining the keyword "main" in order to run the program.
+    number_of_times = int(input("Choose the number of times you want to spam. ")) #double parenthesis is passing the tuple as a single argument
+#number_of_times = the underscores are there to name a loop variable that won't be referring to any variable. It just makes it easier for us to read what sort of function it is.
+#int(input. int means integer and is needed to read the user's int input (whatever int they type) in order to spam the message as many times as the user wants to. 
+#the ("") is a print function that is used whenever the program is asking the user something. 
+    message = input("What message do you want to spam? ") #message is the name of the variable, same rule applies in line 2. The input allows the user to input any message they wish to spam.
+#The ("") is the same function as line 2; however, when the user types a message they must use quotes in order for the program to print the message.
+    for _ in range(number_of_times): #this line of code makes sure that the number of times repeated does not go over the amount the user inputted in line 2.
+        print(message) #used print function to print the message
+#This is an iterative process that repeats the same function for the given number of times the user wishes
