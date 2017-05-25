@@ -2,4 +2,10 @@ CSP Final
 Thuy Phung
 //Insert Name into this Document on line 2
 
-//Insert url where you forked a repository
+//https://codereview.stackexchange.com/questions/31282/super-simple-spam-program
+
+def main():
+    number_of_times = int(input("Choose the number of times you want to spam. "))
+    message = input("What message do you want to spam? ")
+    for _ in range(number_of_times):
+        print(message)
